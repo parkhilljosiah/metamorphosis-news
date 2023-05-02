@@ -11,7 +11,6 @@ body {
   background-color: var(--metamorphosis-white);
   font-family: "Poppins", sans-serif;
   color: var(--metamorphosis-dark-blue);
-  font-weight: 800;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
