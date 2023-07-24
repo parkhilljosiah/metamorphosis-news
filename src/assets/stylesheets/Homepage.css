@@ -1,0 +1,48 @@
+.homepage__container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homepage__logo__container {
+  color: var(--metamorphosis-dark-blue);
+  text-align: center;
+}
+
+.homepage__logo {
+  height: 4em;
+}
+
+.homepage__title {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.homepage__subtitle {
+  font-size: 1.5em;
+  color: var(--metamorphosis-midtone-blue);
+}
+
+.homepage__title,
+.homepage__subtitle {
+  margin: -0.25em;
+}
+
+.homepage__link__container {
+  margin-block: 1em;
+  display: grid;
+  grid-template-columns: 3em 3em 3em 3em 3em;
+}
+
+.homepage__link {
+  font-size: 2em;
+  color: var(--metamorphosis-midtone-blue);
+  transition: 0.65s ease-in-out;
+}
+
+.homepage__link:hover {
+  transform: translateY(-0.25em);
+  color: var(--metamorphosis-dark-blue);
+}

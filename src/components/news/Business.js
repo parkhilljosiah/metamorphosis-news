@@ -1,3 +1,7 @@
+import Articles from "../articles/Articles";
+
 export default function Business() {
-  return <p>Business</p>;
+  let query = "&category=business";
+
+  return <Articles query={query} />;
 }

@@ -1,5 +1,6 @@
 .sidebar__container {
-  position: relative;
+  top: 0;
+  position: sticky;
   display: flex;
   flex-direction: column;
   background-color: var(--metamorphosis-midtone-blue);
@@ -39,6 +40,7 @@
 }
 
 .sidebar__container__header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +51,7 @@
   cursor: pointer;
   position: absolute;
   font-size: 1.5em;
-  top: 0.25em;
+  top: -2.25em;
   right: 0.5em;
   transition: 0.5s ease-in-out;
 }
@@ -60,6 +62,12 @@
 
 .sidebar__logo {
   height: 3.5em;
+  cursor: pointer;
+  transition: 0.75s ease-in-out;
+}
+
+.sidebar__logo:hover {
+  transform: translateY(-0.5em);
 }
 
 .sidebar__links {

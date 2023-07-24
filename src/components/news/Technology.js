@@ -1,5 +1,7 @@
+import Articles from "../articles/Articles";
+
 export default function Technology() {
-    return (
-        <p>Technology</p>
-    )
+  let query = "&category=technology";
+
+  return <Articles query={query} />;
 }

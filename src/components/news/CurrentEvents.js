@@ -1,5 +1,10 @@
+import { useEffect, useState } from "react";
+import "../../assets/stylesheets/Article.css";
+import Articles from "../articles/Articles";
+
 export default function CurrentEvents() {
-    return (
-        <p>Current Events</p>
-    )
+
+    let query = ""
+
+ return <Articles query={query} />
 }

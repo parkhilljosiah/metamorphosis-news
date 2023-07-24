@@ -6,6 +6,7 @@ import CurrentEvents from "./components/news/CurrentEvents";
 import Sports from "./components/news/Sports";
 import Entertainment from "./components/news/Entertainment";
 import Technology from "./components/news/Technology";
+import Homepage from "./components/homepage/Homepage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Sidebar />
       </div>
       <Routes>
+        <Route path="/" element={<Homepage />} />
         <Route path="/current" element={<CurrentEvents />} />
         <Route path="/business" element={<Business />} />
         <Route path="/sports" element={<Sports />} />
