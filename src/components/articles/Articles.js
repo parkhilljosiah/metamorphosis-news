@@ -7,21 +7,17 @@ export default function Articles(props) {
 
   var url = `https://newsapi.org/v2/top-headlines?country=us${props.query}&apiKey=1d57d7ce62d6405a8958626940c6ad7a`;
 
-  var req = new Request(url);
-
-  function getCurrentEvents() {
-    return fetch(req)
-      .then((response) => {
-        return response.json();
-      })
-      .then((responseData) => {
-        return responseData.articles;
-      });
-  }
-
   useEffect(() => {
-    getCurrentEvents().then((value) => setData(value));
-  }, []);
+    const fetchData = async () => {
+      const result = await fetch(url);
+      result.json().then((response) => {
+        setData(response.articles);
+      });
+    };
+
+    fetchData();
+
+  }, [url]);
 
   return (
     <div className="article__wrapper">
@@ -58,7 +54,8 @@ export default function Articles(props) {
         })
       ) : (
         <div className="article__loading">
-          Loading <i id="loading__icon" className="fa-solid fa-rotate fa-spin"></i>
+          Loading{" "}
+          <i id="loading__icon" className="fa-solid fa-rotate fa-spin"></i>
         </div>
       )}
     </div>
