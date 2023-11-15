@@ -86,3 +86,19 @@
 #loading__icon {
   margin-left: 0.25em;
 }
+
+@media screen and (max-width: 500px) {
+  .article__container {
+    width: 90%;
+    margin-inline-end: 2em;
+  }
+
+  .article__link {
+    position: absolute;
+    left: 1.5em;
+  }
+
+  .article__date {
+    right: 1.5em;
+  }
+}

@@ -46,3 +46,28 @@
   transform: translateY(-0.25em);
   color: var(--metamorphosis-dark-blue);
 }
+
+@media screen and (max-width: 500px) {
+  .homepage__container {
+    align-items: center;
+  }
+
+  .homepage__logo__container {
+    padding-inline-end: 1em;
+  }
+  
+
+  .homepage__logo {
+    height: 2.5em;
+    align-self: center;
+  }
+
+  .homepage__title {
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+
+  .homepage__subtitle {
+    font-size: 1em;
+  }
+}
